@@ -1,1 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plug District | Sportswear</title>
 
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f5f5f5;
+      color: #111;
+    }
+
+    header {
+      background: #111;
+      color: white;
+      padding: 22px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 30px;
+      letter-spacing: 3px;
+    }
+
+    header p {
+      margin-top: 7px;
+      color: #bbb;
+      font-size: 14px;
+    }
+
+    .hero {
+      background: #1c1c1c;
+      color: white;
+      text-align: center;
+      padding: 70px 20px;
+    }
+
+    .hero h2 {
+      font-size: 42px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      color: #ccc;
+      font-size: 17px;
+    }
+
+    .section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 45px 20px;
+    }
+
+    .section h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 28px;
+    }
+
+    .brands {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+
+    .brand {
+      background: white;
+      border: 1px solid #ddd;
+      padding: 13px 22px;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 25px;
+    }
+
+    .product {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+      padding-bottom: 20px;
+    }
+
+    .product-image {
+      height: 230px;
+      background: #e8e8e8;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #777;
+      font-size: 15px;
+    }
+
+    .product-content {
+      padding: 18px;
+    }
+
+    .product h3 {
+      font-size: 19px;
+      margin-bottom: 8px;
+    }
+
+    .product p {
+      color: #666;
+      font-size: 14px;
+      line-height: 1.5;
+      margin-bottom: 12px;
+    }
+
+    .price {
+      font-size: 21px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .buy-button {
+      display: block;
+      width: 100%;
+      text-align: center;
+      background: #111;
+      color: white;
+      padding: 13px;
+      border-radius: 7px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .buy-button:hover {
+      background: #333;
+    }
+
+    .info {
+      background: white;
+      text-align: center;
+      padding: 40px 20px;
+      margin-top: 20px;
+    }
+
+    .info h2 {
+      margin-bottom: 12px;
+    }
+
+    footer {
+      background: #111;
+      color: #aaa;
+      text-align: center;
+      padding: 25px 15px;
+      font-size: 13px;
+    }
+
+    @media (max-width: 600px) {
+      .hero h2 {
+        font-size: 32px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>PLUG DISTRICT</h1>
+    <p>Multi-Brand Sportswear</p>
+  </header>
+
+  <section class="hero">
+    <h2>LEVEL UP YOUR GAME</h2>
+    <p>Discover sportswear from the brands you love.</p>
+  </section>
+
+  <section class="section">
+
+    <h2>Shop Brands</h2>
+
+    <div class="brands">
+      <div class="brand">NIKE</div>
+      <div class="brand">UNDER ARMOUR</div>
+      <div class="brand">ADIDAS</div>
+      <div class="brand">PUMA</div>
+    </div>
+
+    <h2>Featured Products</h2>
+
+    <div class="products">
+
+      <div class="product">
+        <div class="product-image">
+          Product Image
+        </div>
+
+        <div class="product-content">
+          <h3>Nike Performance Tee</h3>
+          <p>Lightweight performance sportswear designed for training and everyday wear.</p>
+          <div class="price">£29.99</div>
+          <a class="buy-button" href="#">BUY NOW</a>
+        </div>
+      </div>
+
+      <div class="product">
+        <div class="product-image">
+          Product Image
+        </div>
+
+        <div class="product-content">
+          <h3>Under Armour Training Top</h3>
+          <p>Comfortable and breathable activewear for training and workouts.</p>
+          <div class="price">£34.99</div>
+          <a class="buy-button" href="#">BUY NOW</a>
+        </div>
+      </div>
+
+      <div class="product">
+        <div class="product-image">
+          Product Image
+        </div>
+
+        <div class="product-content">
+          <h3>Adidas Training Shorts</h3>
+          <p>Versatile sports shorts made for training, running and everyday activity.</p>
+          <div class="price">£24.99</div>
+          <a class="buy-button" href="#">BUY NOW</a>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="info">
+    <h2>UK Delivery</h2>
+    <p>Fast and reliable delivery across the UK.</p>
+  </section>
+
+  <footer>
+    <p>© 2026 Plug District. All rights reserved.</p>
+    <p>Contact: plugdistrict@gmail.com</p>
+  </footer>
+
+</body>
+</html>
