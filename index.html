@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Plug District | Sportswear</title>
-
   <style>
     * {
       box-sizing: border-box;
@@ -70,7 +69,7 @@
       justify-content: center;
       gap: 12px;
       flex-wrap: wrap;
-      margin-bottom: 40px;
+      margin-bottom: 45px;
     }
 
     .brand {
@@ -83,7 +82,7 @@
 
     .products {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 25px;
     }
 
@@ -96,33 +95,35 @@
     }
 
     .product-image {
-      height: 230px;
+      height: 300px;
       background: #e8e8e8;
       display: flex;
       align-items: center;
       justify-content: center;
       color: #777;
       font-size: 15px;
+      text-align: center;
+      padding: 20px;
     }
 
     .product-content {
-      padding: 18px;
+      padding: 20px;
     }
 
     .product h3 {
-      font-size: 19px;
-      margin-bottom: 8px;
+      font-size: 20px;
+      margin-bottom: 10px;
     }
 
     .product p {
       color: #666;
       font-size: 14px;
       line-height: 1.5;
-      margin-bottom: 12px;
+      margin-bottom: 15px;
     }
 
     .price {
-      font-size: 21px;
+      font-size: 24px;
       font-weight: bold;
       margin-bottom: 15px;
     }
@@ -133,7 +134,7 @@
       text-align: center;
       background: #111;
       color: white;
-      padding: 13px;
+      padding: 14px;
       border-radius: 7px;
       text-decoration: none;
       font-weight: bold;
@@ -162,6 +163,10 @@
       font-size: 13px;
     }
 
+    footer p {
+      margin: 5px 0;
+    }
+
     @media (max-width: 600px) {
       .hero h2 {
         font-size: 32px;
@@ -169,86 +174,64 @@
     }
   </style>
 </head>
-
 <body>
-
   <header>
     <h1>PLUG DISTRICT</h1>
     <p>Multi-Brand Sportswear</p>
   </header>
-
   <section class="hero">
     <h2>LEVEL UP YOUR GAME</h2>
     <p>Discover sportswear from the brands you love.</p>
   </section>
-
   <section class="section">
+<h2>Shop Brands</h2>
 
-    <h2>Shop Brands</h2>
+<div class="brands">
+  <div class="brand">NIKE</div>
+  <div class="brand">UNDER ARMOUR</div>
+  <div class="brand">ASICS</div>
+  <div class="brand">BERGHAUS</div>
+</div>
 
-    <div class="brands">
-      <div class="brand">NIKE</div>
-      <div class="brand">UNDER ARMOUR</div>
-      <div class="brand">ADIDAS</div>
-      <div class="brand">PUMA</div>
+<h2>Featured Product</h2>
+
+<div class="products">
+
+  <div class="product">
+
+    <div class="product-image">
+      Nike x Corteiz Air Max 95<br>
+      Green
     </div>
 
-    <h2>Featured Products</h2>
+    <div class="product-content">
 
-    <div class="products">
+      <h3>Nike x Corteiz Air Max 95</h3>
 
-      <div class="product">
-        <div class="product-image">
-          Product Image
-        </div>
+      <p>
+        Green Nike x Corteiz Air Max 95 sneakers.
+        A standout pair for collectors and sneaker fans.
+      </p>
 
-        <div class="product-content">
-          <h3>Nike Performance Tee</h3>
-          <p>Lightweight performance sportswear designed for training and everyday wear.</p>
-          <div class="price">£29.99</div>
-          <a class="buy-button" href="#">BUY NOW</a>
-        </div>
-      </div>
+      <div class="price">£150</div>
 
-      <div class="product">
-        <div class="product-image">
-          Product Image
-        </div>
-
-        <div class="product-content">
-          <h3>Under Armour Training Top</h3>
-          <p>Comfortable and breathable activewear for training and workouts.</p>
-          <div class="price">£34.99</div>
-          <a class="buy-button" href="#">BUY NOW</a>
-        </div>
-      </div>
-
-      <div class="product">
-        <div class="product-image">
-          Product Image
-        </div>
-
-        <div class="product-content">
-          <h3>Adidas Training Shorts</h3>
-          <p>Versatile sports shorts made for training, running and everyday activity.</p>
-          <div class="price">£24.99</div>
-          <a class="buy-button" href="#">BUY NOW</a>
-        </div>
-      </div>
+      <a class="buy-button" href="#">
+        BUY NOW
+      </a>
 
     </div>
 
+  </div>
+
+</div>
   </section>
-
   <section class="info">
     <h2>UK Delivery</h2>
     <p>Fast and reliable delivery across the UK.</p>
   </section>
-
   <footer>
     <p>© 2026 Plug District. All rights reserved.</p>
     <p>Contact: plugdistrict@gmail.com</p>
   </footer>
-
 </body>
 </html>
