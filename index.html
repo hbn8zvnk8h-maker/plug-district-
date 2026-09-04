@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Plug District | Multi-Brand Sportswear</title>
+
+<title>PLUG DISTRICT | Premium Sportswear</title>
 
 <style>
 * {
@@ -14,50 +15,55 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background: #f5f5f5;
+  background: #f4f4f4;
   color: #111;
 }
 
 header {
-  background: #111;
+  background: #050505;
   color: white;
-  padding: 22px;
   text-align: center;
+  padding: 25px 20px;
 }
 
 header h1 {
-  font-size: 32px;
-  letter-spacing: 3px;
+  font-size: 34px;
+  letter-spacing: 5px;
 }
 
 header p {
-  margin-top: 7px;
-  color: #bbb;
+  margin-top: 8px;
+  color: #aaa;
+  font-size: 14px;
+  letter-spacing: 1px;
 }
 
 .hero {
   background: white;
   text-align: center;
-  padding: 70px 20px;
+  padding: 80px 20px;
 }
 
 .hero h2 {
-  font-size: 46px;
+  font-size: 48px;
+  letter-spacing: 1px;
   margin-bottom: 15px;
 }
 
 .hero p {
-  font-size: 18px;
   color: #555;
+  font-size: 18px;
+  max-width: 600px;
+  margin: auto;
 }
 
 .section {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: auto;
-  padding: 55px 20px;
+  padding: 60px 20px;
 }
 
-.section h2 {
+.section-title {
   text-align: center;
   font-size: 30px;
   margin-bottom: 35px;
@@ -74,20 +80,21 @@ header p {
   color: white;
   padding: 30px 10px;
   text-align: center;
-  font-size: 20px;
+  font-size: 19px;
   font-weight: bold;
   border-radius: 10px;
+  letter-spacing: 1px;
 }
 
 .products {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
   gap: 25px;
 }
 
 .product {
   background: white;
-  border-radius: 15px;
+  border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 5px 20px rgba(0,0,0,0.08);
 }
@@ -104,18 +111,43 @@ header p {
 }
 
 .product-info h3 {
-  font-size: 21px;
-  margin-bottom: 8px;
+  font-size: 20px;
+  line-height: 1.3;
+  margin-bottom: 9px;
+}
+
+.product-info p {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.5;
 }
 
 .price {
-  font-size: 22px;
+  font-size: 23px;
   font-weight: bold;
-  margin: 12px 0 18px;
+  margin: 15px 0;
+}
+
+.size-label {
+  display: block;
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 7px;
+}
+
+.size-select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  background: white;
+  margin-bottom: 14px;
+  font-size: 14px;
 }
 
 .buy {
   display: block;
+  width: 100%;
   background: #111;
   color: white;
   text-decoration: none;
@@ -123,37 +155,55 @@ header p {
   padding: 14px;
   border-radius: 8px;
   font-weight: bold;
+  transition: 0.2s;
+}
+
+.buy:hover {
+  opacity: 0.8;
 }
 
 .info {
   background: white;
   text-align: center;
-  padding: 45px 20px;
+  padding: 55px 20px;
 }
 
 .info h2 {
   margin-bottom: 12px;
 }
 
+.info p {
+  color: #555;
+}
+
 footer {
-  background: #111;
+  background: #050505;
   color: white;
   text-align: center;
-  padding: 30px 20px;
+  padding: 35px 20px;
 }
 
 footer p {
-  color: #aaa;
+  color: #999;
   margin-top: 8px;
 }
 
 @media (max-width: 650px) {
+
   .hero h2 {
     font-size: 36px;
   }
 
   .brands {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .products {
+    grid-template-columns: 1fr;
+  }
+
+  .product img {
+    height: 360px;
   }
 }
 </style>
@@ -163,16 +213,19 @@ footer p {
 
 <header>
   <h1>PLUG DISTRICT</h1>
-  <p>Multi-Brand Sportswear</p>
+  <p>MULTI-BRAND SPORTSWEAR</p>
 </header>
 
 <section class="hero">
   <h2>LEVEL UP YOUR GAME</h2>
-  <p>Premium sportswear from the brands you know and love.</p>
+  <p>
+    Premium footwear and sportswear from the brands you know and love.
+  </p>
 </section>
 
 <section class="section">
-  <h2>SHOP BRANDS</h2>
+
+  <h2 class="section-title">SHOP BRANDS</h2>
 
   <div class="brands">
     <div class="brand">NIKE</div>
@@ -180,38 +233,444 @@ footer p {
     <div class="brand">ASICS</div>
     <div class="brand">BERGHAUS</div>
   </div>
+
 </section>
 
 <section class="section">
-  <h2>FEATURED PRODUCT</h2>
+
+  <h2 class="section-title">SHOP TRAINERS</h2>
 
   <div class="products">
 
+    <!-- P-6000 DIFFUSED BLACK -->
+
     <div class="product">
-      <img src="IMG_9568.jpeg" alt="Corteiz x Nike Air Max 95 Gutta Green">
+
+      <img
+        src="IMG_9579.jpeg"
+        alt="Nike P-6000 Diffused Black"
+      >
 
       <div class="product-info">
-        <h3>Corteiz x Nike Air Max 95 "Gutta Green"</h3>
-        <p>Sequoia / Tour Yellow / Black</p>
+
+        <h3>Nike P-6000</h3>
+
+        <p>
+          Diffused Black
+        </p>
+
+        <div class="price">£90</div>
+
+        <label class="size-label">
+          Men's UK Shoe Size
+        </label>
+
+        <select class="size-select">
+          <option value="">Select size</option>
+          <option>UK 6</option>
+          <option>UK 6.5</option>
+          <option>UK 7</option>
+          <option>UK 7.5</option>
+          <option>UK 8</option>
+          <option>UK 8.5</option>
+          <option>UK 9</option>
+          <option>UK 9.5</option>
+          <option>UK 10</option>
+          <option>UK 10.5</option>
+          <option>UK 11</option>
+          <option>UK 12</option>
+        </select>
+
+        <a
+          class="buy"
+          href="https://buy.stripe.com/6oU3coeZa2NmeoY3L14ow09"
+        >
+          BUY NOW
+        </a>
+
+      </div>
+    </div>
+
+
+    <!-- P-6000 SHADOW -->
+
+    <div class="product">
+
+      <img
+        src="IMG_9578.jpeg"
+        alt="Nike P-6000 Shadow"
+      >
+
+      <div class="product-info">
+
+        <h3>Nike P-6000</h3>
+
+        <p>
+          Shadow
+        </p>
+
+        <div class="price">£90</div>
+
+        <label class="size-label">
+          Men's UK Shoe Size
+        </label>
+
+        <select class="size-select">
+          <option value="">Select size</option>
+          <option>UK 6</option>
+          <option>UK 6.5</option>
+          <option>UK 7</option>
+          <option>UK 7.5</option>
+          <option>UK 8</option>
+          <option>UK 8.5</option>
+          <option>UK 9</option>
+          <option>UK 9.5</option>
+          <option>UK 10</option>
+          <option>UK 10.5</option>
+          <option>UK 11</option>
+          <option>UK 12</option>
+        </select>
+
+        <a
+          class="buy"
+          href="https://buy.stripe.com/5kQfZa4kwfA8eoY81h4ow08"
+        >
+          BUY NOW
+        </a>
+
+      </div>
+    </div>
+
+
+    <!-- AIR MAX 95 PINK FOAM -->
+
+    <div class="product">
+
+      <img
+        src="IMG_9580.jpeg"
+        alt="Nike Air Max 95 Pink Foam"
+      >
+
+      <div class="product-info">
+
+        <h3>Nike Air Max 95</h3>
+
+        <p>
+          Pink Foam
+        </p>
 
         <div class="price">£150</div>
-<a class="buy" href="https://buy.stripe.com/28E6oA2cofA8eoY95l4ow00">BUY NOW</a>
-        
+
+        <label class="size-label">
+          Men's UK Shoe Size
+        </label>
+
+        <select class="size-select">
+          <option value="">Select size</option>
+          <option>UK 6</option>
+          <option>UK 6.5</option>
+          <option>UK 7</option>
+          <option>UK 7.5</option>
+          <option>UK 8</option>
+          <option>UK 8.5</option>
+          <option>UK 9</option>
+          <option>UK 9.5</option>
+          <option>UK 10</option>
+          <option>UK 10.5</option>
+          <option>UK 11</option>
+          <option>UK 12</option>
+        </select>
+
+        <a
+          class="buy"
+          href="https://buy.stripe.com/cNibIUaIU3RqeoYftJ4ow07"
+        >
+          BUY NOW
+        </a>
+
+      </div>
+    </div>
+
+
+    <!-- AIR MAX 95 OG NEON -->
+
+    <div class="product">
+
+      <img
+        src="IMG_9581.jpeg"
+        alt="Nike Air Max 95 OG Neon"
+      >
+
+      <div class="product-info">
+
+        <h3>Nike Air Max 95 OG</h3>
+
+        <p>
+          Black / Cool Grey / Neon Yellow
+        </p>
+
+        <div class="price">£150</div>
+
+        <label class="size-label">
+          Men's UK Shoe Size
+        </label>
+
+        <select class="size-select">
+          <option value="">Select size</option>
+          <option>UK 6</option>
+          <option>UK 6.5</option>
+          <option>UK 7</option>
+          <option>UK 7.5</option>
+          <option>UK 8</option>
+          <option>UK 8.5</option>
+          <option>UK 9</option>
+          <option>UK 9.5</option>
+          <option>UK 10</option>
+          <option>UK 10.5</option>
+          <option>UK 11</option>
+          <option>UK 12</option>
+        </select>
+
+        <a
+          class="buy"
+          href="https://buy.stripe.com/5kQcMYaIUgEcdkUepF4ow05"
+        >
+          BUY NOW
+        </a>
+
+      </div>
+    </div>
+
+
+    <!-- ASICS GEL-1130 -->
+
+    <div class="product">
+
+      <img
+        src="IMG_9585.jpeg"
+        alt="ASICS GEL-1130 Black Cream"
+      >
+
+      <div class="product-info">
+
+        <h3>ASICS GEL-1130</h3>
+
+        <p>
+          Black / Cream
+        </p>
+
+        <div class="price">£110</div>
+
+        <label class="size-label">
+          Men's UK Shoe Size
+        </label>
+
+        <select class="size-select">
+          <option value="">Select size</option>
+          <option>UK 6</option>
+          <option>UK 6.5</option>
+          <option>UK 7</option>
+          <option>UK 7.5</option>
+          <option>UK 8</option>
+          <option>UK 8.5</option>
+          <option>UK 9</option>
+          <option>UK 9.5</option>
+          <option>UK 10</option>
+          <option>UK 10.5</option>
+          <option>UK 11</option>
+          <option>UK 12</option>
+        </select>
+
+        <a
+          class="buy"
+          href="https://buy.stripe.com/28EfZa8AM1JibcMgxN4ow03"
+        >
+          BUY NOW
+        </a>
+
+      </div>
+    </div>
+
+
+    <!-- ASICS GEL-KAYANO 14 -->
+
+    <div class="product">
+
+      <img
+        src="IMG_9583.jpeg"
+        alt="ASICS GEL-KAYANO 14 White Fjord Grey"
+      >
+
+      <div class="product-info">
+
+        <h3>ASICS GEL-KAYANO 14</h3>
+
+        <p>
+          White / Fjord Grey
+        </p>
+
+        <div class="price">£135</div>
+
+        <label class="size-label">
+          Men's UK Shoe Size
+        </label>
+
+        <select class="size-select">
+          <option value="">Select size</option>
+          <option>UK 6</option>
+          <option>UK 6.5</option>
+          <option>UK 7</option>
+          <option>UK 7.5</option>
+          <option>UK 8</option>
+          <option>UK 8.5</option>
+          <option>UK 9</option>
+          <option>UK 9.5</option>
+          <option>UK 10</option>
+          <option>UK 10.5</option>
+          <option>UK 11</option>
+          <option>UK 12</option>
+        </select>
+
+        <a
+          class="buy"
+          href="https://buy.stripe.com/6oU7sEdV63Rq5SsgxN4ow02"
+        >
+          BUY NOW
+        </a>
+
+      </div>
+    </div>
+
+
+    <!-- ASICS GEL-NYC -->
+
+    <div class="product">
+
+      <img
+        src="IMG_9586.jpeg"
+        alt="ASICS GEL-NYC 2.0 Black Graphite Grey"
+      >
+
+      <div class="product-info">
+
+        <h3>ASICS GEL-NYC 2.0</h3>
+
+        <p>
+          Black / Graphite Grey
+        </p>
+
+        <div class="price">£120</div>
+
+        <label class="size-label">
+          Men's UK Shoe Size
+        </label>
+
+        <select class="size-select">
+          <option value="">Select size</option>
+          <option>UK 6</option>
+          <option>UK 6.5</option>
+          <option>UK 7</option>
+          <option>UK 7.5</option>
+          <option>UK 8</option>
+          <option>UK 8.5</option>
+          <option>UK 9</option>
+          <option>UK 9.5</option>
+          <option>UK 10</option>
+          <option>UK 10.5</option>
+          <option>UK 11</option>
+          <option>UK 12</option>
+        </select>
+
+        <a
+          class="buy"
+          href="https://buy.stripe.com/00wfZaeZacnWa8I0yP4ow01"
+        >
+          BUY NOW
+        </a>
+
+      </div>
+    </div>
+
+
+    <!-- GUTTA GREEN -->
+
+    <div class="product">
+
+      <img
+        src="IMG_9568.jpeg"
+        alt="Corteiz x Nike Air Max 95 Gutta Green"
+      >
+
+      <div class="product-info">
+
+        <h3>Corteiz x Nike Air Max 95 "Gutta Green"</h3>
+
+        <p>
+          Sequoia / Tour Yellow / Black
+        </p>
+
+        <div class="price">£420</div>
+
+        <label class="size-label">
+          Men's UK Shoe Size
+        </label>
+
+        <select class="size-select">
+          <option value="">Select size</option>
+          <option>UK 6</option>
+          <option>UK 6.5</option>
+          <option>UK 7</option>
+          <option>UK 7.5</option>
+          <option>UK 8</option>
+          <option>UK 8.5</option>
+          <option>UK 9</option>
+          <option>UK 9.5</option>
+          <option>UK 10</option>
+          <option>UK 10.5</option>
+          <option>UK 11</option>
+          <option>UK 12</option>
+        </select>
+
+        <a
+          class="buy"
+          href="https://buy.stripe.com/28E6oA2cofA8eoY95l4ow00"
+        >
+          BUY NOW
+        </a>
+
       </div>
     </div>
 
   </div>
+
 </section>
 
 <section class="info">
+
   <h2>UK DELIVERY</h2>
-  <p>Fast and reliable delivery across the UK.</p>
+
+  <p>
+    Fast and reliable delivery across the UK.
+  </p>
+
+  <p style="margin-top:8px;">
+    Orders under £30: £3.99 delivery · Orders £30+: FREE delivery
+  </p>
+
 </section>
 
 <footer>
+
   <h3>PLUG DISTRICT</h3>
-  <p>Multi-brand sportswear.</p>
-  <p>plugdistrict@gmail.com</p>
+
+  <p>
+    Multi-brand sportswear.
+  </p>
+
+  <p>
+    plugdistrict@gmail.com
+  </p>
+
 </footer>
 
 </body>
